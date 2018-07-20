@@ -21,10 +21,6 @@ jQuery(document).ready(function($){
 				})
 				.catch(function(error) {
 					alert('No eres Bienvenido');
-
-
-
-
 				});
 			}
 		}
@@ -56,3 +52,4 @@ jQuery(document).ready(function($){
 		
 		);
 });
+

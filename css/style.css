@@ -1,0 +1,13 @@
+.container {
+	display: block;
+	font-family: arial;
+}
+
+body {
+	background-color: #DFE3E9;
+	color:#000;
+}
+
+.padding{
+	padding-left: 20px;
+}
