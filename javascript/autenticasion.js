@@ -26,30 +26,3 @@ jQuery(document).ready(function($){
 		}
 		
 		);
-	$('.registro').on(
-		'submit',
-		function(e){
-			e.preventDefault();
-
-			var email = $('.registro .email').val();
-			var password = $('.registro .password').val();
-
-			if(!email) {
-				alert('Debe ingresar un correo');
-			}else if(!password) {
-				alert('Debe ingresar una contraseña');
-			}else {
-				firebase.auth().createUserWithEmailAndPassword(email, password)
-				.then(function() {
-					alert('Bienvenido');
-					console.log(email,password);
-				})
-				.catch(function(error) {
-					alert('No eres Bienvenido');
-				});
-			};
-		}
-		
-		);
-});
-

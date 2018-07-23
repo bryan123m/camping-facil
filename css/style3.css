@@ -1,0 +1,25 @@
+.container {
+	display: block;
+	font-family: arial;
+}
+
+body {
+	background-color: #DFE3E9;
+	color:#000;
+}
+
+.padding{
+	padding-left: 20px;
+}
+
+label {
+	padding: 12px 0 0 0;
+}
+
+footer {
+	padding: 12px 0 0 0;
+}
+
+.columna {
+	
+}
