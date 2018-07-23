@@ -1,5 +1,5 @@
 .container {
-	
+	display: block;
 	font-family: arial;
 }
 
@@ -13,5 +13,9 @@ body {
 }
 
 label {
-	padding: 7px 0 0 0;
+	padding: 12px 0 0 0;
+}
+
+footer {
+	padding: 12px 0 0 0;
 }
