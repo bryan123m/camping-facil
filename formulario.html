@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,25 +18,24 @@
 			</header>
 			<!--clase para el padding-->
 			<div class="padding">
-				<div class="row">
-					<div class="col-md-12 ">
-						<!--inserte el lugar en el cula quiere ir-->
+				<div class="col-md-12" class="form-group">
+						<!--selecciona un departamento-->
 						<label>Lugar:</label>
-						<input class="col-md-11" type="text" id="lugar">
+						<select class="col-md-12" class="form-control" name="Departamento" id="departamentos">
+							<option value="seleccion-d" id="o">Selecciona un Lugar</option>
+						</select>
 					</div>
-				</div>
-				<div>			
-					<div class="row">
-						<div class="col-md-6 ">
+				<div class="row">
+					<div class="col-md-6">
 							<!--cuantos son-->
 							<label>	Cuantos son: </label>
-							<input class="col-md-11"   type="text" id="cuantos" name="cuantos">
+							<input class="col-md-11" type="text" id="cuantos" name="cuantos">
 						</div>
 						<!--mensione cuantos son-->
-						<div class="columna">
-							<p>Tipo:</p>
-							<select class="barra2" name="tipo">
-								<option>Seleccionar tipo</option>
+						<div class="col-md-5"  class="form-group">
+							<label>Tipo:</label>
+							<select class="col-md-12" class="form-control" name="Departamento" id="departamentos">
+							<option value="seleccion-d" id="o">Selecciona el tipo</option>
 								<option>Acampar</option>  
 								<option>Picnic</option> 
 							</select>
