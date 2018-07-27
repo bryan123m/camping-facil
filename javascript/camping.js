@@ -1,10 +1,13 @@
+
+jQuery(document).ready(function($){
+
 let stateDropdown = $('#departamentos');
 let cityDropdown = $('#ciudades');
 
 stateDropdown.prop('selectedIndex', 0);
 let jsonData = {};
 
-const url = '../javascript/data.json';
+const url = '/javascript/data.json';
 $.getJSON(url, function (data) {
     $.each(data, function (key, entry) {
         stateDropdown.append($('<option></option>').attr('value', entry.id).text(entry.departamento));
@@ -28,3 +31,4 @@ stateDropdown.on('change', function(){
         }
     });
 });
+})
