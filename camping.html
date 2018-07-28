@@ -18,75 +18,57 @@
 			</header>
 			<!--clase para el padding-->
 			<div class="padding">
-				<div>			
+				<div class="signup">			
 					<div class="row">
 						<div class="col-md-6 ">
 							<!--inserte el nombre completo-->
 							<label>	Nombre Completo: </label>
 							<input class="col-md-11"   type="name" id="name" name="userName" placeholder="pepito perez">
-						</div>
-						<div class="col-md-6 ">
-							<label> Correo Electronico: </label>
-							<input class="col-md-11" type="email" id="ConfirmEmail" name="userEmail" placeholder="alguien@gmail.com">
-						</div>			
+						</div>		
 					</div>
-				</div>
-				<div id="genero">			
-					<!--seleccione el genero-->
-					<label>Seleccione su género:</label>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio-genero" value="Masculino">
-						<label class="form-check-label" for="inlineRadio-Masculino">Masculino</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio-genero" value="Femenino">
-						<label class="form-check-label" for="inlineRadio-Femenino">Femenino</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio-genero" value="Otro">
-						<label class="form-check-label" for="inlineRadio-otro">Otro</label>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6" class="form-group">
-						<!--selecciona un departamento-->
-						<label>Departamento</label>
-						<select class="col-md-11" class="form-control" name="Departamento" id="departamentos">
-							<option value="seleccion-d" id="o">Selecciona un Departamento</option>
-						</select>
-					</div>
-					<div class="col-md-6" class="form-group">
-						<label>Ciudad</label>
-						<select  class="col-md-11" class="form-control" name="Ciudad" id="ciudades">
-							<option value="seleccion-c" id="e">Selecciona una Ciudad</option>
-						</select>
-					</div>
-				</div>	
-				<div>
+
+					
 					<div class="row">
-						<div class="col-md-6 ">
-							<!--inserte el correo nuevo-->
-							<label> Correo nuevo: </label>
-							<input class="col-md-11" type="email" id="nuevo" name="correoNuevo" placeholder="alguien@gmail.com">
+						<div class="col-md-6" class="form-group">
+							<!--selecciona un departamento-->
+							<label>Departamento</label>
+							<select class="col-md-11" class="form-control" name="Departamento" id="departamentos">
+								<option value="seleccion-d">Selecciona un Departamento</option>
+							</select>
 						</div>
-						<div class="col-md-6 ">
-							<!--confirme el correo electronico-->
-							<label> Confirmacion De Correo: </label>
-							<input class="col-md-11" type="email" id="ConfirmNuevo" name="ConfirmNuevo">
+						<div class="col-md-6" class="form-group">
+							<label>Ciudad</label>
+							<select  class="col-md-11" class="form-control" name="Ciudad" id="ciudades">
+								<option value="seleccion-c">Selecciona una Ciudad</option>
+							</select>
+						</div>
+					</div>	
+					<div>
+						<div class="row">
+							<div class="col-md-6 ">
+								<!--inserte el correo nuevo-->
+								<label> Correo nuevo: </label>
+								<input class="col-md-11" type="email" id="email" name="correoNuevo" placeholder="alguien@gmail.com">
+							</div>
+							<div class="col-md-6 ">
+								<!--confirme el correo electronico-->
+								<label> Confirmacion De Correo: </label>
+								<input class="col-md-11" type="email" id="conf_email" name="conf_email">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div>
-					<div class="row">
-						<div class="col-md-6 ">
-							<!--inserte la contraseña-->
-							<label> Contraseña: </label>
-							<input class="col-md-11" class="contraseña" type="password" id="password" name="password">
-						</div>					
-						<div class="col-md-6 ">
-							<!--confirme la contraseña-->
-							<label> Confirmacion De Contraseña: </label>
-							<input class="col-md-11" class="contraseña" type="password" id="conf_password" name="password">
+					<div>
+						<div class="row">
+							<div class="col-md-6 ">
+								<!--inserte la contraseña-->
+								<label> Contraseña: </label>
+								<input class="col-md-11" class="contraseña" type="password" id="password" name="password">
+							</div>					
+							<div class="col-md-6 ">
+								<!--confirme la contraseña-->
+								<label> Confirmacion De Contraseña: </label>
+								<input class="col-md-11" class="contraseña" type="password" id="conf_password" name="password">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -94,7 +76,7 @@
 			<footer>
 				<div class="card-footer">
 					<!--boton encargado de almacenar la informacion-->
-					<button type="button">Guardar</button>
+					<button type="button" id="guardar">Guardar</button>
 				</div> 
 			</footer>
 		</div>
@@ -102,6 +84,9 @@
 		src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		crossorigin="anonymous"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+		<script src="javascript/firebase.js"></script>
 		<script src="javascript/camping.js"></script>
+		<script src="javascript/camping2.js"></script>
 	</body>
 	</html>
