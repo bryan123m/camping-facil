@@ -20,10 +20,12 @@
 			<div class="padding">
 				<div class="col-md-12" class="form-group">
 					<!--selecciona un lugar-->
-					<label>Lugar:</label>
-					<select class="col-md-12" class="form-control" name="Departamento" id="departamentos">
-						<option value="seleccion-d" id="lugar">Selecciona un Lugar</option>
-					</select>
+					<label>Lugar</label>
+					<select class="col-md-11" class="form-control" name="Departamento" id="lugar">
+							<option value="seleccion-d" id="tipo">Selecciona el lugar</option>
+							<option>1</option>  
+							<option>2</option> 
+						</select>
 				</div>
 				<div class="row">
 					<div class="col-md-6">
@@ -34,7 +36,7 @@
 					<!--seleccione un tipo-->
 					<div class="col-md-5"  class="form-group">
 						<label>Tipo:</label>
-						<select class="col-md-12" class="form-control" name="Departamento" id="departamentos">
+						<select class="col-md-12" class="form-control" name="Departamento" id="tipo">
 							<option value="seleccion-d" id="tipo">Selecciona el tipo</option>
 							<option>Acampar</option>  
 							<option>Picnic</option> 
@@ -45,11 +47,14 @@
 			<footer>
 				<div class="card-footer">
 					<!--boton encargado de buscar la coincidecia-->
-					<button type="button">Buscar</button>
+					<button type="button" id="buscar">Buscar</button>
 				</div> 
 			</footer>
 		</div>
 	</div>
 </div>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script src="javascript/firebase.js"></script>
+<script src="javascript/formulario.js"></script>
 </body>
 </html>
