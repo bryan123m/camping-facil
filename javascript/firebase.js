@@ -6,5 +6,6 @@ var config = {
     storageBucket: "camping-facil-9e5df.appspot.com",
     messagingSenderId: "850135452594"
   };
-firebase.initializeApp(config);
+firebase.initializeApp(config);	
+	
 const database = firebase.database();

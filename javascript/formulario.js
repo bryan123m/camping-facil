@@ -16,9 +16,9 @@ jQuery(document).ready(function($){
 			}
 			else {
 				var user_info = {
-						name:$('.signup #name').val(),
-						departamento:$('.signup #departamentos').val(),
-						ciudad:$('.signup #ciudades').val(),
+						name:$('.formulario #lugar').val(),
+						departamento:$('.formulario #cuantos').val(),
+						ciudad:$('.formulario #tipo').val(),
 
 					};
 					console.log(user_info);

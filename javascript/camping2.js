@@ -23,7 +23,6 @@ jQuery(document).ready(function($){
 				.createUserWithEmailAndPassword(email, password)
 				.then(function() {
 					alert('Bienvenido');
-					//location.href
 
 					var user_info = {
 						name:$('.signup #name').val(),
@@ -34,7 +33,8 @@ jQuery(document).ready(function($){
 					};
 					firebase.database().ref('Users_info/')
         			.push(user_info);
-        			console.log(user_info);
+        			location.href = "formulario.html"
+
 				})
 				.catch(function(error) {
 					alert('Algo salio mal');
