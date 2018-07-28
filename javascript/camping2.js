@@ -23,13 +23,25 @@ jQuery(document).ready(function($){
 				.createUserWithEmailAndPassword(email, password)
 				.then(function() {
 					alert('Bienvenido');
+					//location.href
+
+					var user_info = {
+						name:$('.signup #name').val(),
+						Departamento:$('.signup #departamento').val(),
+						Ciudad:$('.signup #ciudad').val(),
+						email:email,
+						password:password,
+					};
+					firebase.database().ref('Users_info')
+        			.push(user_info);
+        			console.log(user_info);
 				})
 				.catch(function(error) {
 					alert('Algo salio mal');
 
 
 				});
-			};
+			}
 		}
 		
 		);
