@@ -27,12 +27,12 @@ jQuery(document).ready(function($){
 
 					var user_info = {
 						name:$('.signup #name').val(),
-						Departamento:$('.signup #departamento').val(),
-						Ciudad:$('.signup #ciudad').val(),
+						departamento:$('.signup #departamentos').val(),
+						ciudad:$('.signup #ciudades').val(),
 						email:email,
 						password:password,
 					};
-					firebase.database().ref('Users_info')
+					firebase.database().ref('Users_info/')
         			.push(user_info);
         			console.log(user_info);
 				})
