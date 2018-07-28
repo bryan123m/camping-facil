@@ -18,43 +18,45 @@
 			</header>
 			<!--clase para el padding-->
 			<div class="padding">
-				<div class="col-md-12" class="form-group">
-					<!--selecciona un lugar-->
-					<label>Lugar</label>
-					<select class="col-md-11" class="form-control" name="Departamento" id="lugar">
+				<div class="formulario">
+					<div class="col-md-12" class="form-group">
+						<!--selecciona un lugar-->
+						<label>Lugar</label>
+						<select class="col-md-11" class="form-control" name="lugar" id="lugar">
 							<option value="seleccion-d" id="tipo">Selecciona el lugar</option>
 							<option>1</option>  
 							<option>2</option> 
 						</select>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<!--cuantos son-->
-						<label>	Cuantos son: </label>
-						<input class="col-md-11" type="text" id="cuantos" name="cuantos">
 					</div>
-					<!--seleccione un tipo-->
-					<div class="col-md-5"  class="form-group">
-						<label>Tipo:</label>
-						<select class="col-md-12" class="form-control" name="Departamento" id="tipo">
-							<option value="seleccion-d" id="tipo">Selecciona el tipo</option>
-							<option>Acampar</option>  
-							<option>Picnic</option> 
-						</select>
+					<div class="row">
+						<div class="col-md-6">
+							<!--cuantos son-->
+							<label>	Cuantos son: </label>
+							<input class="col-md-11" type="text" id="cuantos" name="cuantos">
+						</div>
+						<!--seleccione un tipo-->
+						<div class="col-md-5"  class="form-group">
+							<label>Tipo:</label>
+							<select class="col-md-12" class="form-control" name="tipo" id="tipo">
+								<option value="seleccion-d" id="tipo">Selecciona el tipo</option>
+								<option>Acampar</option>  
+								<option>Picnic</option> 
+							</select>
+						</div>
 					</div>
+					<footer>
+						<div class="card-footer">
+							<!--boton encargado de buscar la coincidecia-->
+							<button type="button" id="buscar">Buscar</button>
+						</div> 
+					</footer>
 				</div>
 			</div>
-			<footer>
-				<div class="card-footer">
-					<!--boton encargado de buscar la coincidecia-->
-					<button type="button" id="buscar">Buscar</button>
-				</div> 
-			</footer>
 		</div>
 	</div>
-</div>
-<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-<script src="javascript/firebase.js"></script>
-<script src="javascript/formulario.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+	<script src="javascript/firebase.js"></script>
+	<script src="javascript/formulario.js"></script>
 </body>
 </html>

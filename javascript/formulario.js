@@ -4,26 +4,25 @@ jQuery(document).ready(function($){
 		function(e){
 			e.preventDefault();
 
-			var lugar = $('.signup #lugar').val();
-			var cuantos = $('.signup #cuantos').val();
-			var tipo = $('.signup #tipo').val();
+			var lugar = $('.formulario #lugar').val();
+			var cuantos = $('.formulario #cuantos').val();
+			var tipo = $('.formulario #tipo').val();
 			if(!lugar) {
 				alert('Debe ingresar un lugar');
 			}else if(!cuantos) {
 				alert('Debe ingresar cuantos son');
 			}else if (!tipo) {
-				alert('Debe ingresar un tipo')
+				alert('Debe ingresar un tipo');
 			}
 			else {
 				var user_info = {
 						name:$('.signup #name').val(),
 						departamento:$('.signup #departamentos').val(),
 						ciudad:$('.signup #ciudades').val(),
-						email:email,
-						password:password,
+
 					};
-					firebase.database().ref('Users_info/')
-        			.push(user_info);
+					console.log(user_info);
+					database.ref('users_info').push(user_info);
         			location.href="resultado.html"
 			}
 		});
