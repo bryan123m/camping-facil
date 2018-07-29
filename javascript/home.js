@@ -17,12 +17,12 @@ jQuery(document).ready(function($){
 			var email = $('.formulario #email').val();
 			var password = $('.formulario #password').val();
 
-			if(!email) {
+			if (!email) {
 				alert('Debe ingresar un correo');
-			}else if(!password) {
+			}else if (!password) {
 				alert('Debe ingresar una contraseña');
 			}else {
-					alert("email + password");
+				
 				firebase
 				.auth().signInWithEmailAndPassword(email, password)
 				.then(function() {

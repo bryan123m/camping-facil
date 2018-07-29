@@ -16,13 +16,14 @@ jQuery(document).ready(function($){
 			}
 			else {
 				var user_info = {
-						name:$('.formulario #lugar').val(),
+						lugar:$('.formulario #lugar').val(),
 						departamento:$('.formulario #cuantos').val(),
 						ciudad:$('.formulario #tipo').val(),
 
 					};
+					
 					console.log(user_info);
-					database.ref('users_info').push(user_info);
+					database.ref('lugar_info').push(user_info);
         			location.href="resultado.html"
 			}
 		});
