@@ -15,6 +15,7 @@ jQuery(document).ready(function($){
 
 				firebase
 				.auth().signInWithEmailAndPassword(email, password)
+				location.href = "formulario.html"
 				.then(function() {
 					alert('Bienvenido');
 					

@@ -9,9 +9,33 @@ jQuery(document).ready(function($){
 		$ ('#boton').show();
 		$ ('#formulario').hide();
 
-	$('#boton').click(function() {
-		$ ('')
+	$('#boton').click(
+		'submit',
+		function(e){
+			e.preventDefault();
 
-	})
-	})
-})
+			var email = $('.formulario #email').val();
+			var password = $('.formulario #password').val();
+
+			if(!email) {
+				alert('Debe ingresar un correo');
+			}else if(!password) {
+				alert('Debe ingresar una contraseña');
+			}else {
+					alert("email + password");
+				firebase
+				.auth().signInWithEmailAndPassword(email, password)
+				.then(function() {
+					alert('Bienvenido');
+					location.href = "formulario.html";
+					
+				})
+				.catch(function(error) {
+					alert('No eres Bienvenido');
+				});
+			}
+		}
+		
+		);
+	});
+});
