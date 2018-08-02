@@ -1,4 +1,14 @@
+
+
 jQuery(document).ready(function($){
+
+	$('#tipo').on('change', function(){
+		
+		var lugar=$('.formulario #tipo').val();
+		alert(lugar);
+		if (true) {}
+	})
+
 	$('#buscar').click(
 		'submit',
 		function(e){
@@ -8,12 +18,14 @@ jQuery(document).ready(function($){
 			console.log(lugar)
 			var cuantos = $('.formulario #cuantos').val();
 			var tipo = $('.formulario #tipo').val();
-			if (lugar == 'Selecciona el lugar') {
-				alert('Debe ingresar un lugar');
+			if (tipo == 'Selecciona el tipo') {
+				alert('Debe ingresar un tipo')
 			}else if (lugar == 'Selecciona el lugar') {
+				alert('Debe ingresar un lugar');
+			}else if (!cuantos) {
 				alert('Debe ingresar cuantos son');
 			}else if (lugar == 'Selecciona el lugar') {
-				alert('Debe ingresar un tipo');
+				alert('Debe ingresar un lugar');
 			}
 			else {
 				var user_info = {
@@ -50,8 +62,6 @@ jQuery(document).ready(function($){
 
 			}else if (lugar == parque) {
 				location.href="resultado5.html"
-			}else {
-				alert('algo salio mal');
 			}
-		});
+	});
 });
