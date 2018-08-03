@@ -21,38 +21,28 @@
 				<div class="padding">
 					<div class="row">
 						<div class="col-md-6" class="form-group">
+							<!--seleccione un tipo-->
 							<label>Tipo:</label>
 							<select class="col-md-12" class="form-control" name="tipo" id="tipo">
 								<option>Selecciona el tipo</option>
-								<option id="resultadoUno">Acampar</option>  
-								<option id="resultadoDos">Picnic</option> 
+								<option id="acampar">Acampar</option>  
+								<option id="picnic">Picnic</option> 
 							</select>
 						</div>
-						<div class="col-md-6" class="form-grupo">
-							<!--cuantos son-->
-							<label>	Cuantos son: </label>
-							<input class="col-md-11" class="form-control" type="text" id="cuantos" name="cuantos">
-						</div>
-					</div>
-					<div class="row">
-						<!--seleccione un tipo-->
 						<div class="col-md-6"  class="form-group">
 							<!--selecciona un lugar-->
-							<label>Lugar para acampar</label>
-							<select class="col-md-12" class="form-control" name="lugar" id="lugar">
-								<option id="seleccione">Selecciona el lugar</option>
+							<label>Lugar para:</label>
+							<select class="col-md-11" class="form-control" name="lugar" id="lugar">
+								<optgroup label="acampar">
+									<option id="seleccione">Selecciona el lugar</option>
 								<option id="santa" value="Campo escuela">Campo escuela</option>  
 								<option id="marinilla" value="Marinilla">Marinilla</option>
-							</select>
-						</div>
-						<div class="col-md-6" class="form-grupo">
-							<!--selecciona un lugar-->
-							<label>Lugar para picnic</label>
-							<select class="col-md-11" class="form-control" name="picnic" id="picnic">
-								<option>Selecciona el lugar</option>
-								<option id="arvi" value="Parque arvi">Parque arvi</option> 
+								</optgroup>
+								<optgroup label="picnic">
+									<option id="arvi" value="Parque arvi">Parque arvi</option> 
 								<option id="jardin" value="Jardin botanico">Jardin botanico</option> 
-								<option id="parque" value="Parque gabriel">Parque grabriel</option> 
+								<option id="parque" value="Parque gabriel">Parque grabriel</option>	
+								</optgroup>
 							</select>
 						</div>
 					</div>
@@ -67,7 +57,6 @@
 		</div>
 	</div>
 </div>
-</body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
 <script src="javascript/firebase.js"></script>
