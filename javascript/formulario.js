@@ -32,6 +32,8 @@ jQuery(document).ready(function($){
 			var jardin = $('.formulario #jardin').val();
 			var parque = $('.formulario #parque').val();
 			var asomadera = $('.formulario #asomadera').val();
+			var juanes = $('.formulario #juanes').val();
+			var descalzos = $('.formulario #descalzos').val();
 
 
 			if (lugar == santa) {
@@ -48,14 +50,25 @@ jQuery(document).ready(function($){
 
 			}else if (lugar == parque) {
 				location.href="resultado5.html"
+
 			}else if (lugar == magdalena) {
 				location.href="resultado6.html"
+
 			}else if (lugar == romeral) {
 				location.href="resultado7.html"
+
 			}else if (lugar == farallones) {
 				location.href="resultado8.html"
+
 			}else if (lugar == asomadera) {
 				location.href="resultado9.html"
+
+			}else if (lugar == juanes) {
+				location.href="resultado10.html"
+
+			}else if (lugar == descalzos) {
+				location.href="resultado11.html"
+
 			}
 	});
 });
