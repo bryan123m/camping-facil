@@ -25,9 +25,14 @@ jQuery(document).ready(function($){
 			var lugar = $('.formulario #lugar').val();
 			var santa = $('.formulario #santa').val();
 			var marinilla = $('.formulario #marinilla').val();
+			var magdalena = $('.formulario #magdalena').val();
+			var romeral = $('.formulario #romeral').val();
+			var farallones = $('.formulario #farallones').val();
 			var arvi = $('.formulario #arvi').val();
 			var jardin = $('.formulario #jardin').val();
 			var parque = $('.formulario #parque').val();
+			var asomadera = $('.formulario #asomadera').val();
+
 
 			if (lugar == santa) {
 				location.href="resultado.html"
@@ -43,6 +48,14 @@ jQuery(document).ready(function($){
 
 			}else if (lugar == parque) {
 				location.href="resultado5.html"
+			}else if (lugar == magdalena) {
+				location.href="resultado6.html"
+			}else if (lugar == romeral) {
+				location.href="resultado7.html"
+			}else if (lugar == farallones) {
+				location.href="resultado8.html"
+			}else if (lugar == asomadera) {
+				location.href="resultado9.html"
 			}
 	});
 });
